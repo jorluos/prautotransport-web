@@ -31,7 +31,10 @@ function ServiceCard({ image, title, label }: ServicesCardProps) {
 
 function Services() {
   return (
-    <div className="w-full h-auto md:h-94.75 bg-[#F4F6FA] flex flex-col items-center py-10.5">
+    <div
+      id="servicios"
+      className="w-full h-auto md:h-94.75 bg-[#F4F6FA] flex flex-col items-center py-10.5"
+    >
       <h2 className="text-[26px] font-instrument font-semibold text-[#003087]">
         Nuestros servicios de transporte
       </h2>

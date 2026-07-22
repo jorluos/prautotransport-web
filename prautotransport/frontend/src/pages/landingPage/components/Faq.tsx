@@ -44,7 +44,10 @@ function Faq() {
 
   return (
     // Contenedor principal con alto automático y color de fondo de Figma
-    <div className="w-full h-auto bg-[#F4F6FA] py-16 px-6 border-b border-[#DDE2EC] flex flex-col items-center">
+    <div
+      id="faq"
+      className="w-full h-auto bg-[#F4F6FA] py-16 px-6 border-b border-[#DDE2EC] flex flex-col items-center"
+    >
       <h2 className="text-[26px] font-instrument font-semibold text-[#003087] text-center mb-10">
         Preguntas frecuentes
       </h2>

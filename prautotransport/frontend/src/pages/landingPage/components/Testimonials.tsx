@@ -29,7 +29,10 @@ function TestimonialCard({
 }: TestimonialCardProps) {
   return (
     // Contenedor de la tarjeta con ancho exacto de Figma (361px)
-    <div className="w-90.25 shrink-0 bg-[#F4F6FA]/50 rounded-3xl overflow-hidden border border-[#DDE2EC]/40 flex flex-col shadow-sm">
+    <div
+      id="testimonios"
+      className="w-90.25 shrink-0 bg-[#F4F6FA]/50 rounded-3xl overflow-hidden border border-[#DDE2EC]/40 flex flex-col shadow-sm"
+    >
       {/* 1. SECCIÓN VIDEO/FOTO (Alto de 289px) */}
       <div className="relative w-full h-72.25">
         <img
@@ -77,7 +80,10 @@ function TestimonialCard({
 function Testimonials() {
   return (
     // Contenedor principal con fondo blanco y alto automático
-    <div className="w-full h-auto bg-[#FFFFFF] py-16 px-6 border-b border-[#DDE2EC] flex flex-col items-center">
+    <div
+      id="testimonios"
+      className="w-full h-auto bg-[#FFFFFF] py-16 px-6 border-b border-[#DDE2EC] flex flex-col items-center"
+    >
       <h2 className="text-[26px] font-instrument font-semibold text-[#003087] text-center mb-10">
         Lo que dicen nuestros clientes
       </h2>

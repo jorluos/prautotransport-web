@@ -1,14 +1,14 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import TopAnnouncement from "./components/TopAnnouncement";
-import LandingPage from "./pages/landingPage/LandingPage";
+import Advisers from "./pages/advisers/Advisers";
 
 function App() {
   return (
     <>
       <TopAnnouncement />
       <Header />
-      <LandingPage />
+      <Advisers />
       <Footer />
     </>
   );

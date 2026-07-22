@@ -29,7 +29,10 @@ function HowItWorksCard({ image, title, label }: HowItWorksCardProps) {
 
 function HowItWorks() {
   return (
-    <div className="w-full h-auto md:h-120 bg-[#FFFFFF] flex flex-col items-center justify-center py-12.5 border-b">
+    <div
+      id="como-funciona"
+      className="w-full h-auto md:h-120 bg-[#FFFFFF] flex flex-col items-center justify-center py-12.5 border-b"
+    >
       <h2 className="text-[26px] font-instrument font-semibold text-[#003087] text-center">
         ¿Cómo funciona el proceso?
       </h2>

@@ -20,7 +20,10 @@ const BlueCheck = () => (
 function Hero() {
   return (
     // Contenedor principal: Altura responsiva con fondo azul claro (#E6F1FB)
-    <div className="w-full h-auto bg-[#E6F1FB] relative overflow-hidden py-12 md:py-20 flex items-center border-b border-[#DDE2EC]">
+    <div
+      id="cotizar"
+      className="w-full h-auto bg-[#E6F1FB] relative overflow-hidden py-12 md:py-20 flex items-center border-b border-[#DDE2EC]"
+    >
       {/* IMAGEN DE FONDO con opacidad baja (25%) para crear el efecto de filtro azul */}
       <img
         src={Background}

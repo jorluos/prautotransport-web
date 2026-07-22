@@ -4,3 +4,7 @@
 @theme {
   --font-instrument: "Instrument Sans", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
