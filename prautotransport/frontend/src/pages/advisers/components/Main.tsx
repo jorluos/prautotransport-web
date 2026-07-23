@@ -1,5 +1,7 @@
 import DayanaImage from "../../../assets/AdvisorsImages/dayana.png";
 import YoselisImage from "../../../assets/AdvisorsImages/yoselis.png";
+import AutomaticBanner from "./AutomaticBanner";
+import ServiceInfo from "./ServiceInfo";
 
 // Icono Teléfono para el botón Llamar
 const CallIcon = () => (
@@ -12,55 +14,13 @@ const CallIcon = () => (
   </svg>
 );
 
-// Icono de Auriculares (Soporte)
-const HeadphonesIcon = () => (
-  <svg
-    className="w-[28px] h-[28px] text-[#003087] shrink-0"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M3 18v-6a9 9 0 0118 0v6"
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"
-    />
-  </svg>
-);
-
 function Main() {
   return (
     <div className="w-full flex flex-col items-center py-12 px-6 bg-[#F4F6FA] font-instrument gap-12 relative">
       {/* =========================================================
           1. PÍLDORA DE ATENCIÓN
           ========================================================= */}
-      <div className="w-full max-w-[1198px] px-4">
-        <div className="bg-[#E6F1FB] rounded-3xl pt-10 pb-10 pl-[30px] pr-[30px] border border-[#B5D4F4]/30 shadow-sm flex flex-row items-center justify-start gap-[25px] min-h-[177px] md:h-[177px]">
-          {/* Círculo del icono */}
-          <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
-            <HeadphonesIcon />
-          </div>
-
-          {/* Información y Textos */}
-          <div className="flex flex-col gap-1 text-left">
-            <h3 className="text-[16px] font-instrument font-bold text-[#003087]">
-              Atención disponible de lunes a sábado
-            </h3>
-            <p className="text-[14px] font-instrument text-[#5A6070] leading-relaxed">
-              Todas nuestras asesoras hablan español y están especializadas en
-              rutas Puerto Rico ↔ Estados Unidos. Escoge la asesora que
-              prefieras o te asignamos una disponible.
-            </p>
-          </div>
-        </div>
-      </div>
+      <ServiceInfo />
 
       {/* =========================================================
           2. GRID DE ASESORAS (Dayana & Yoselis) -> Ancho 1,006px, Gap 40px
@@ -197,27 +157,7 @@ function Main() {
       {/* =========================================================
           3. BANNER DE ASIGNACIÓN AUTOMÁTICA
           ========================================================= */}
-      <div className="w-full max-w-[1197px] px-4">
-        <div className="bg-[#003087] rounded-3xl p-8 flex flex-col items-center justify-center text-center gap-[25px] min-h-[247px] md:h-[247px] shadow-md">
-          <h3 className="text-[22px] md:text-[24px] font-bold text-white leading-none">
-            ¿No sabes cuál elegir?
-          </h3>
-
-          <p className="text-[#B5D4F4] text-[15px] md:text-[16px] leading-none">
-            Te asignamos la asesora disponible en este momento
-          </p>
-
-          <a
-            href="https://wa.me/17877416032?text=Hola,%20quiero%20que%20me%20asignen%20una%20asesora%20disponible"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-white hover:bg-white/10 transition-colors text-white py-3.5 px-6 rounded-full flex items-center justify-center gap-2.5 font-semibold text-[15px] cursor-pointer"
-          >
-            <span>👤</span>
-            <span>Conectar con una asesora ahora</span>
-          </a>
-        </div>
-      </div>
+      <AutomaticBanner />
     </div>
   );
 }

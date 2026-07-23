@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // Icono Checkmark rojo en círculo
 const RedCheck = () => (
   <svg
@@ -86,10 +88,13 @@ function Requirements() {
         </p>
 
         {/* Botón de acción */}
-        <button className="bg-[#C8102E] hover:bg-[#b00e28] transition-colors text-white py-3.5 px-6 rounded-2xl flex items-center justify-center gap-2.5 font-instrument font-semibold text-[16px] shadow-sm w-full sm:w-auto cursor-pointer">
+        <Link
+          to="/asesoras"
+          className="bg-[#C8102E] hover:bg-[#b00e28] transition-colors text-white py-3.5 px-6 rounded-2xl flex items-center justify-center gap-2.5 font-instrument font-semibold text-[16px] shadow-sm w-full sm:w-auto cursor-pointer"
+        >
           <span>💬</span>
           <span>Hablar con asesor</span>
-        </button>
+        </Link>
       </div>
     </div>
   );
