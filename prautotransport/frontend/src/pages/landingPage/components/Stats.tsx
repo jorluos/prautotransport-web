@@ -31,7 +31,7 @@ function Stats() {
       <p className="text-[16px] md:text-[18px] font-instrument text-[#5A6070] text-center leading-relaxed">
         Miles de clientes han confiado en{" "}
         <span className="font-semibold">PRAutoTransport</span> para mover sus
-        vehículos de forma segura entre Puerto Rico y Estados Unidos.
+        vehículos de forma segura entre <span className="font-semibold">Puerto Rico</span> y <span className="font-semibold">Estados Unidos.</span>
       </p>
     </div>
   );

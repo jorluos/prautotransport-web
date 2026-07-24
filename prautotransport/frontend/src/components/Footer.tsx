@@ -21,13 +21,25 @@ function Footer() {
             <h4 className="text-[#FFFFFF] mb-4 font-bold">Enlaces</h4>
             <ul className="text-[#DDE2EC] space-y-3">
               <li>
-                <Link to="/documentos" className="hover:text-white transition-colors">Documentos</Link>
+                <Link
+                  to="/documentos"
+                  className="hover:text-white transition-colors"
+                >
+                  Documentos
+                </Link>
               </li>
               <li>
-                <Link to="/terminos-y-condiciones" className="hover:text-white transition-colors">Términos y condiciones</Link>
+                <Link
+                  to="/terminos-y-condiciones"
+                  className="hover:text-white transition-colors"
+                >
+                  Términos y condiciones
+                </Link>
               </li>
               <li>
-                <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
+                <Link to="/blog" className="hover:text-white transition-colors">
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
@@ -36,18 +48,20 @@ function Footer() {
             <h4 className="text-[#FFFFFF] mb-4 font-bold">Oficinas</h4>
             <ul className="text-[#DDE2EC] space-y-3">
               <li>
-                <span className="font-semibold text-white">San Juan, Puerto Rico</span>
+                <span className="font-semibold text-white">
+                  San Juan, Puerto Rico
+                </span>
               </li>
               <li className="text-[14px]">
-                Garlas LLC. — Ave. Boulevard, W-7, Ste. 2 Levittown, Toa Baja, PR 00949
+                Garlas LLC. — Ave. Boulevard, W-7, Ste. 2 Levittown, Toa Baja,
+                PR 00949
               </li>
               <li>
                 <span className="font-semibold text-white">Tampa, Florida</span>
               </li>
               <li className="text-[14px] leading-relaxed">
                 16484 Northdale Oaks Dr <br />
-                Tampa, FL 33624 <br />
-                ✉ info@prautotransport.com
+                Tampa, FL 33624 <br />✉ info@prautotransport.com
               </li>
             </ul>
           </div>
@@ -66,6 +80,8 @@ function Footer() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >

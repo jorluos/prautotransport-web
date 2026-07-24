@@ -14,6 +14,21 @@ const CallIcon = () => (
   </svg>
 );
 
+const ChatIcon = () => (
+  <svg
+    className="w-5 h-5 shrink-0"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+  </svg>
+);
+
 function Main() {
   return (
     <div className="w-full flex flex-col items-center py-12 px-6 bg-[#F4F6FA] font-instrument gap-12 relative">
@@ -69,7 +84,7 @@ function Main() {
                 rel="noopener noreferrer"
                 className="w-full h-12 bg-[#25D366] hover:bg-[#20ba5a] transition-colors rounded-2xl text-white flex items-center justify-center gap-2 font-semibold text-[16px] shadow-sm"
               >
-                <span>💬</span> Hablar con Dayana
+                <ChatIcon />  Hablar con Dayana
               </a>
               <a
                 href="tel:+17877416032"
@@ -132,7 +147,7 @@ function Main() {
                 rel="noopener noreferrer"
                 className="w-full h-12 bg-[#25D366] hover:bg-[#20ba5a] transition-colors rounded-2xl text-white flex items-center justify-center gap-2 font-semibold text-[16px] shadow-sm"
               >
-                <span>💬</span> Hablar con Yoselis
+                <ChatIcon />  Hablar con Yoselis
               </a>
               <a
                 href="tel:+17877416032"
