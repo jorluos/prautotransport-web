@@ -5,36 +5,61 @@ interface FaqItem {
   answer: string;
 }
 
+const ChevronIcon = ({ isOpen }: { isOpen: boolean }) => (
+  <svg
+    className={`w-5 h-5 text-[#0D1B3E] shrink-0 transition-transform duration-300 ${
+      isOpen ? "rotate-180" : ""
+    }`}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M6 9l6 6 6-6" />
+  </svg>
+);
+
 function Faq() {
   // Estado para controlar qué pregunta está abierta (null si ninguna lo está)
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqData: FaqItem[] = [
     {
-      question: "¿Qué documentos necesito para transportar mi vehículo?",
-      answer:
-        "Por lo general, necesitas copia de la identificación del dueño, el título de propiedad del vehículo (o carta de autorización del banco si está financiado), el registro vigente y la licencia del vehículo. Para Puerto Rico se requiere además la certificación de no multas y el pago de arbitrios correspondientes.",
+      question: "¿Cuánto tarda el transporte?",
+      answer: "Entre 6 y 18 días según tu origen y destino.",
     },
     {
-      question:
-        "¿Cuánto tiempo tarda el transporte entre Puerto Rico y Estados Unidos?",
+      question: "¿Puedo dejar pertenencias dentro del vehículo?",
       answer:
-        "El tránsito marítimo de puerto a puerto suele tomar entre 4 y 6 días (vía Jacksonville, Florida) o de 8 a 10 días (vía Philadelphia). Si requieres transporte terrestre adicional (Door to Door) en EE.UU., se deben sumar de 3 a 7 días dependiendo de la distancia final.",
+        "[PENDIENTE: agregar respuesta real aquí]",
     },
     {
-      question: "¿Cómo debo preparar mi vehículo para el transporte?",
+      question: "¿El auto necesita estar en funcionamiento?",
       answer:
-        "El vehículo debe estar limpio por fuera para realizar la inspección de daños previa. El tanque de combustible debe tener 1/4 de capacidad o menos por regulaciones marítimas. Además, no se permite dejar pertenencias personales dentro del auto durante el traslado.",
+        "[PENDIENTE: agregar respuesta real aquí]",
     },
     {
-      question: "¿Qué diferencia hay entre transporte abierto y cerrado?",
+      question: "¿El transporte tiene seguro incluido?",
       answer:
-        "El transporte abierto es el más popular y económico, donde el auto viaja en un camión tipo portavehículos convencional. El transporte cerrado utiliza remolques completamente sellados que protegen el vehículo del clima, polvo y escombros, ideal para autos de lujo, exóticos o clásicos.",
+        "[PENDIENTE: agregar respuesta real aquí]",
     },
     {
-      question: "¿El servicio incluye seguro para el vehículo?",
+      question: "¿Cómo realizo el pago?",
       answer:
-        "Sí, todos los transportes contratados a través de PRAutoTransport incluyen una cobertura de seguro de carga contratada que protege tu vehículo contra daños ocurridos durante el proceso de carga, traslado marítimo y descarga.",
+        "[PENDIENTE: agregar respuesta real aquí]",
+    },
+    {
+      question: "¿Puedo rastrear mi vehículo en tránsito?",
+      answer:
+        "[PENDIENTE: agregar respuesta real aquí]",
+    },
+    {
+      question: "¿Necesito el título del vehículo?",
+      answer:
+        "[PENDIENTE: agregar respuesta real aquí]",
     },
   ];
 
@@ -68,9 +93,7 @@ function Faq() {
               >
                 <span>{item.question}</span>
                 {/* Icono animado + / - */}
-                <span className="text-xl text-[#C8102E] shrink-0 transition-transform duration-300">
-                  {isOpen ? "−" : "+"}
-                </span>
+                <ChevronIcon isOpen={isOpen} />
               </button>
 
               {/* Respuesta Desplegable */}

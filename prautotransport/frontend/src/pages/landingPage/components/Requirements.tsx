@@ -33,6 +33,21 @@ const ChatIcon = () => (
   </svg>
 );
 
+const ArrowIcon = () => (
+  <svg
+    className="w-4 h-4 inline-block mx-1 -mt-0.5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M5 12h14M13 6l6 6-6 6" />
+  </svg>
+);
+
 function Requirements() {
   return (
     // Contenedor principal con fondo gris claro (#F4F6FA) y padding
@@ -48,7 +63,7 @@ function Requirements() {
         <div className="w-full md:w-115 bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col gap-4 border border-[#DDE2EC]/30">
           <div className="flex items-center gap-2 text-[16px] font-instrument font-semibold text-[#003087] mb-2">
             <img src={USFlagImg} className="w-5 h-5 shrink-0" alt="USA" />
-            <span>USA → Puerto Rico</span>
+            <span>USA <ArrowIcon /> Puerto Rico</span>
           </div>
 
           <ul className="space-y-4 font-instrument text-[15px] md:text-[16px] text-[#5A6070]">
@@ -75,7 +90,7 @@ function Requirements() {
               className="w-5 h-5 shrink-0"
               alt="Puerto Rico"
             />
-            <span>Puerto Rico → USA</span>
+            <span>Puerto Rico <ArrowIcon /> USA</span>
           </div>
 
           <ul className="space-y-4 font-instrument text-[15px] md:text-[16px] text-[#5A6070]">

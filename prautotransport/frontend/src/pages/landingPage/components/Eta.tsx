@@ -9,9 +9,24 @@ const PRFlag = () => (
   <img src={PRFlagImg} className="w-5 h-5 shrink-0" alt="Puerto Rico" />
 );
 
+const ArrowIcon = () => (
+  <svg
+    className="w-4 h-4 inline-block mx-1 -mt-0.5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M5 12h14M13 6l6 6-6 6" />
+  </svg>
+);
+
 interface EtaCardsProps {
   flag: React.ReactNode;
-  destination: string;
+  destination: React.ReactNode;
   ETA: string;
   label: string;
 }
@@ -45,25 +60,25 @@ function Eta() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full justify-items-center">
         <EtaCards
           flag={<USFlag />}
-          destination="Florida → Puerto Rico"
+          destination={<>Florida <ArrowIcon /> Puerto Rico</>}
           ETA="6–8 días"
           label="Ruta más rápida disponible"
         />
         <EtaCards
           flag={<USFlag />}
-          destination="Texas → Puerto Rico"
+          destination={<>Texas <ArrowIcon /> Puerto Rico</>}
           ETA="8–12 días"
           label="Salidas semanales regulares"
         />
         <EtaCards
           flag={<USFlag />}
-          destination="California → Puerto Rico"
+          destination={<>California <ArrowIcon /> Puerto Rico</>}
           ETA="12–18 días"
           label="Transporte cross-country"
-        />
+          />
         <EtaCards
           flag={<PRFlag />}
-          destination="Puerto Rico → USA"
+          destination={<>Puerto Rico <ArrowIcon /> USA</>}
           ETA="Variable"
           label="Depende del destino final"
         />

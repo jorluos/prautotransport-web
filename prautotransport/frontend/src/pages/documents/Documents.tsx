@@ -107,7 +107,7 @@ function Documents() {
               </li>
 
               <li>
-                <span className="font-semibold text-[#003087]">10.</span> Si el envío del vehículo es hacia Puerto Rico, usted es responsable de pagar el impuesto de importación del vehículo. Para determinar el requisito del impuesto estimado para el vehículo específico, por favor tenga su VIN listo y haga clic <a href="https://suri.hacienda.pr.gov" target="_blank" rel="noopener noreferrer" className="text-[#003087] font-semibold hover:underline">aquí</a>.
+                <span className="font-semibold text-[#003087]">10.</span> Si el envío del vehículo es hacia Puerto Rico, usted es responsable de pagar el impuesto de importación del vehículo. Para determinar el requisito del impuesto estimado para el vehículo específico, por favor tenga su VIN listo y haga clic <a href="https://siscon.hacienda.gobierno.pr/Siscon/Portal/ARBAW951Form.aspx" target="_blank" rel="noopener noreferrer" className="text-[#003087] font-semibold hover:underline">aquí</a>.
               </li>
             </ol>
 

@@ -77,12 +77,22 @@ function AdvisorsSection() {
 
         {/* Botones de acción simplificados */}
         <div className="flex flex-col sm:flex-row gap-4 mt-3">
-          <button className="w-full sm:w-59.5 h-12 bg-[#25D366] hover:bg-[#20ba5a] transition-colors rounded-2xl text-white flex items-center justify-center gap-2 font-instrument font-semibold text-[16px] md:text-[18px] shadow-sm">
+          <a
+            href="https://wa.me/17865156990"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-59.5 h-12 bg-[#25D366] hover:bg-[#20ba5a] transition-colors rounded-2xl text-white flex items-center justify-center gap-2 font-instrument font-semibold text-[16px] md:text-[18px] shadow-sm cursor-pointer"
+          >
             <ChatIcon />  Hablar con Dayana
-          </button>
-          <button className="w-full sm:w-59.5 h-12 bg-[#25D366] hover:bg-[#20ba5a] transition-colors rounded-2xl text-white flex items-center justify-center gap-2 font-instrument font-semibold text-[16px] md:text-[18px] shadow-sm">
+          </a>
+          <a
+            href="https://wa.me/17208317147"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-59.5 h-12 bg-[#25D366] hover:bg-[#20ba5a] transition-colors rounded-2xl text-white flex items-center justify-center gap-2 font-instrument font-semibold text-[16px] md:text-[18px] shadow-sm cursor-pointer"
+          >
             <ChatIcon />  Hablar con Yoselis
-          </button>
+          </a>
         </div>
       </div>
     </div>

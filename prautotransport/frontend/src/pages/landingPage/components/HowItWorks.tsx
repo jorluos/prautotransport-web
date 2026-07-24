@@ -77,7 +77,7 @@ function HowItWorks() {
           <ClockIcon />
           <span>
             Tiempo promedio de proceso:{" "}
-            <span className="font-semibold text-[#003087]">6–18 días</span>{" "}
+            6–18 días{" "}
             según origen y destino
           </span>
         </p>

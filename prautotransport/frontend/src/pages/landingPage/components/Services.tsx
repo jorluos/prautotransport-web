@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Boat from "../../../assets/ServicesImages/boat.png";
 import Car from "../../../assets/ServicesImages/car.png";
 import House from "../../../assets/ServicesImages/house.png";
@@ -30,6 +31,17 @@ function ServiceCard({ image, title, label }: ServicesCardProps) {
 }
 
 function Services() {
+  const handleCotizarClick = (e: React.MouseEvent) => {
+    if (window.location.pathname === "/") {
+      const element = document.getElementById("cotizar");
+      if (element) {
+        e.preventDefault();
+        window.history.pushState(null, "", "/#cotizar");
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <div
       id="servicios"
@@ -60,11 +72,15 @@ function Services() {
           label="Recogida y entrega personalizada."
         />
       </div>
-      <button className="w-58.75 h-12.5 bg-[#C8102E] rounded-2xl mt-2">
-        <p className="text-[18px] font-instrument font-semibold text-[#FFFFFF]">
+      <Link
+        to="/#cotizar"
+        onClick={handleCotizarClick}
+        className="w-58.75 h-12.5 bg-[#C8102E] hover:bg-[#b00e28] transition-colors rounded-2xl mt-2 flex items-center justify-center cursor-pointer shadow-sm"
+      >
+        <span className="text-[18px] font-instrument font-semibold text-[#FFFFFF]">
           Solicitar cotización
-        </p>
-      </button>
+        </span>
+      </Link>
     </div>
   );
 }
