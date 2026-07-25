@@ -1,0 +1,1 @@
+gcloud compute scp --recurse ./build prautotransport:/var/www/html --zone=us-east1-b

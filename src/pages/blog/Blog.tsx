@@ -49,7 +49,7 @@ function Blog() {
         </div>
 
         {/* Right Column - Secondary Posts & Button */}
-        <div className="lg:col-span-5 flex flex-col gap-8 text-left">
+        <div className="lg:col-span-5 flex flex-col gap-8 text-left lg:pt-8">
           <div className="flex flex-col gap-6">
             {secondaryPosts.map((post, index) => (
               <Link
